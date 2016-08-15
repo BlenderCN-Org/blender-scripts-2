@@ -5,16 +5,16 @@
 # Run it with "Blender Render" active, so vertex colors are displayed on viewport
 
 bl_info = {
-    "name": "Set Selection Vertex Color",
-    "author": "Diego F. Goberna",
-    "version": (1, 0),
-    "blender": (2, 75, 0),
-    "location": "???",
-    "description": "Assigs a color to the current vertex/edge/poly selection",
-    "warning": "",
-    "wiki_url": "",
-    "category": "Mesh",
-    }
+	"name": "Set Selection Vertex Color",
+	"author": "Diego F. Goberna",
+	"version": (1, 0),
+	"blender": (2, 75, 0),
+	"location": "???",
+	"description": "Assigs a color to the current vertex/edge/poly selection",
+	"warning": "",
+	"wiki_url": "",
+	"category": "Mesh",
+	}
 
 
 
@@ -60,26 +60,26 @@ class SetSelectionVertexColorOperator(bpy.types.Operator):
 
 
 class SetSelectionVertexColorPanel(bpy.types.Panel):
-    """Assigs a color to the current vertex/edge/poly selection"""
-    bl_label = "Set Selection Vertex Color"
-    bl_idname = "OBJECT_TOOLS_SetSelectionVertexColor"
-    bl_space_type = 'TOOLS'
-    bl_region_type = 'WINDOW'
-    bl_context = "object"
+	"""Assigs a color to the current vertex/edge/poly selection"""
+	bl_label = "Set Selection Vertex Color"
+	bl_idname = "OBJECT_TOOLS_SetSelectionVertexColor"
+	bl_space_type = 'TOOLS'
+	bl_region_type = 'WINDOW'
+	bl_context = "object"
 
-    def draw(self, context):
-        layout = self.layout
+	def draw(self, context):
+		layout = self.layout
 
-        obj = context.object
+		obj = context.object
 		vc= obj.vertex_colors.active.name or '<no vertex color map>'
 		
-        row = layout.row()
-        row.label(text="Object: " + obj.name)
-        row = layout.row()
-        row.label(text="Vertex color: "+vc, icon='WORLD_DATA')
+		row = layout.row()
+		row.label(text="Object: " + obj.name)
+		row = layout.row()
+		row.label(text="Vertex color: "+vc, icon='WORLD_DATA')
 
-        row = layout.row()
-        row.operator("object.set_selection_vertex_color_operator")
+		row = layout.row()
+		row.operator("object.set_selection_vertex_color_operator")
 
 
 	
@@ -96,4 +96,4 @@ def unregister():
 	bpy.utils.unregister_class(SetSelectionVertexColorPanel)
 
 if __name__ == "__main__":
-    register()
+	register()
