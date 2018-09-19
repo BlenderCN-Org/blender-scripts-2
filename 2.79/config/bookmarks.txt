@@ -1,0 +1,19 @@
+[Bookmarks]
+D:\super\
+Y:\googledrive\supercraft\
+Y:\mozvr\work\
+Y:\mozvr\git\a-shooter-assets\models\
+Y:\mozvr\git\aframe-vr-editor\
+Y:\mozvr\git\vrbrowser\
+X:\Downloads\
+[Recent]
+C:\Users\feiss\Desktop\cosas\
+D:\super\work\supermedium-exokit\redesign\striptest\
+D:\super\work\supermedium-exokit\
+D:\super\work\supermedium-exokit\redesign\
+D:\JulesSOS\feiss\refs\
+D:\super\work\art tutorial\scenes\
+C:\Users\feiss\Desktop\
+D:\super\git\aframe-particleplayer-component\exporters\blender\
+D:\super\git\aframe-particleplayer-component\examples\vortex\
+D:\super\git\aframe-particleplayer-component\examples\basic\
